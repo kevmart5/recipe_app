@@ -1,23 +1,16 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 
-import Header from './components/header/';
-import LoginForm from './components/main/'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-class App extends Component {
+import App from './App';
+
+class Index extends Component {
   render() {
     return (
-      <div className="dcc">
-        <Header 
-          name="Kevin"
-          surName="Martinez"
-          dob="Caca"/>
-        <LoginForm />
-      </div>
-     )
-   }
- }
+      <App />
+    )
+  }
+}
 
- export default App;
-
-ReactDOM.render(<App />, document.getElementById('root'))
+ReactDOM.render(<Index />, document.getElementById('root'))
