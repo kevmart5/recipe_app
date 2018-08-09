@@ -1,4 +1,5 @@
 import React from "react";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 import Recipe from "../../../components/home/recipes/";
 
@@ -6,7 +7,7 @@ import "./searchSection.scss";
 
 const KEY = "465ddbff109a7dbb37d2c241a60a4426";
 const ID = "bf96a2c4";
-let searchParam = 'steak'; 
+let searchParam = 'pasta'; 
 let API = `https://api.edamam.com/search?q=${searchParam}&app_id=${ID}&app_key=${KEY}`;
 const URI = 'https://api.edamam.com/';
 
@@ -72,7 +73,12 @@ class SearchBar extends React.Component {
         </div>
         <div className="row">
           {recipes.map(rec => (
-            <Recipe label={rec.recipe.label} image={rec.recipe.image} />
+            <Recipe 
+              label={rec.recipe.label} 
+              image={rec.recipe.image} 
+              dietLabels={rec.recipe.dietLabels}
+              calories={rec.recipe.calories}
+            />
           ))}
         </div>
       </div>

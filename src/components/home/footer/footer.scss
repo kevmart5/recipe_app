@@ -1,0 +1,18 @@
+.footer-section {
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+  background-color: #e67e22;
+  color: #ecf0f1;
+  border-bottom: 2px solid #ecf0f1;
+  margin-top: 5rem;
+
+  .footer__navigation-list {
+    padding: 0;
+  }
+
+  .footer__navigation-item {
+    list-style: none;
+    display: inline;
+    margin-right: 5%;
+  }
+}
