@@ -1,4 +1,6 @@
+
 import React, { Component } from 'react';
+import "babel-polyfill";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 import './assets/scss/main.scss';
