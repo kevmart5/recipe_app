@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 
+import './header.scss';
+
 function Navigation(props) {
   return (
     <nav className="header-navigation">

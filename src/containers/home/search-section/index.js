@@ -2,9 +2,11 @@ import React from "react";
 
 import Recipe from "../../../components/home/recipes/";
 
+import "./searchSection.scss";
+
 const KEY = "465ddbff109a7dbb37d2c241a60a4426";
 const ID = "bf96a2c4";
-const API = `https://api.edamam.com/search?q=tacos&app_id=${ID}&app_key=${KEY}&from=0&to=3&calories=591-722&health=alcohol-free`;
+const API = `https://api.edamam.com/search?q=hamburger&app_id=${ID}&app_key=${KEY}`;
 
 class SearchBar extends React.Component {
   constructor(props) {
@@ -19,24 +21,27 @@ class SearchBar extends React.Component {
     const { recipes } = this.state;
     return (
       <div className="container">
-        <div className="row">
-          <div className="col-md-12">
-            <form className="form-inline">
-              <div className="form-group mx-sm-3 mb-2">
-                <label for="inputPassword2" className="sr-only">
-                  Password
-                </label>
-                <input
-                  type="password"
-                  className="form-control"
-                  id="inputPassword2"
-                  placeholder="Password"
-                />
+        <div className="search-form">
+          <div className="row">
+            <div className="col-md-4 align-self-center">
+              <h5>Search new recipes</h5>
+            </div>
+            <div className="col-md-8 align-self-center">
+              <div className="">
+                <form className="form-inline">
+                  <div className="form-group mx-sm-3 mb-2">
+                    <input
+                      type="text"
+                      className="form-control"
+                      placeholder="Search"
+                    />
+                  </div>
+                  <button type="submit" className="btn btn-primary mb-2">
+                    Search
+                  </button>
+                </form>
               </div>
-              <button type="submit" className="btn btn-primary mb-2">
-                Confirm identity
-              </button>
-            </form>
+            </div>
           </div>
         </div>
         <div className="row">
