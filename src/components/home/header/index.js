@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 import './header.scss';
 
@@ -7,13 +8,13 @@ function Navigation(props) {
     <nav className="header-navigation">
       <ul className="header-navigation__list">
         <li className="header-navigation__list-item">
+          <Link to={`/`} className="header-navigation__list-link">All recipes</Link>
+        </li>
+        <li className="header-navigation__list-item">
+          <Link to={`/about`} className="header-navigation__list-link">Profile</Link>
+        </li>
+        <li className="header-navigation__list-item">
           <a href="#" className="header-navigation__list-link">My books</a>
-        </li>
-        <li className="header-navigation__list-item">
-          <a href="#" className="header-navigation__list-link">Profile</a>
-        </li>
-        <li className="header-navigation__list-item">
-          <a href="#" className="header-navigation__list-link">All recipes</a>
         </li>
       </ul>
     </nav>
