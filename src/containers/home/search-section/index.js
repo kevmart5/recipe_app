@@ -125,7 +125,6 @@ class SearchBar extends React.Component {
     try {
       const result = await fetch(api.categories[7].url);
       const data = await result.json();
-      console.log(data);
       this.setState({ recipes: data.hits });
       this.setState({ isLoading: false });
       console.log(this.state.recipes);
