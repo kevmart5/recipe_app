@@ -15,3 +15,4 @@ export default {
     { category: 'salads', url: `${API}salads${credentials}` }
   ]
 }
+
