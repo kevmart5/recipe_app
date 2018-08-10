@@ -7,6 +7,7 @@ import './assets/scss/main.scss';
 
 import Home from './pages/home/';
 import About from './pages/about/';
+import RecipeDetails from './pages/recipeDetails/'
 
 class App extends Component {
   render() {
@@ -15,6 +16,7 @@ class App extends Component {
         <div>
           <Route exact path="/" component={Home} />
           <Route path="/about" component={About} />
+          <Route path="/recipe-detail" component={RecipeDetails} />
         </div>
       </Router>
     )

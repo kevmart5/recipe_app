@@ -11,6 +11,7 @@ export default {
     { category: 'hamburger', url: `${API}hamburger${credentials}` },
     { category: 'steak', url: `${API}steak${credentials}` },
     { category: 'chicken', url: `${API}chicken${credentials}` },
-    { category: 'bread', url: `${API}bread${credentials}` }
+    { category: 'bread', url: `${API}bread${credentials}` },
+    { category: 'salads', url: `${API}salads${credentials}` }
   ]
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 import './recipes.scss';
 
@@ -10,14 +11,14 @@ function Recipe(props) {
           <img src={props.image} />
           <h5 className="card-title">{props.label}</h5>
           <p>
-            {props.dietLabels.map(label => (
-                <span>#{label}</span> 
+            {props.dietLabels.map((label, index) => (
+                <span key={index}>#{label}</span> 
               ))}
           </p>
           <p className="card-text">Calories: {props.calories}</p>
-          <a href="#" className="btn btn-primary">
+          <Link to={`/recipe-detail`} className="btn btn-primary">
             View recipe
-          </a>
+          </Link>
         </div>
       </div>
     </div>

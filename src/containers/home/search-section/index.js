@@ -106,12 +106,13 @@ class SearchBar extends React.Component {
           </div>
         </div>
         <div className="row">
-          {recipes.map(rec => (
+          {recipes.map((rec, index) => (
             <Recipe 
               label={rec.recipe.label}
               image={rec.recipe.image}
               dietLabels={rec.recipe.dietLabels}
               calories={rec.recipe.calories}
+              key={index}
             />
           ))}
         </div>
@@ -122,7 +123,7 @@ class SearchBar extends React.Component {
   async componentDidMount() {
     this.setState({ isLoading: true });
     try {
-      const result = await fetch(api.categories[6].url);
+      const result = await fetch(api.categories[7].url);
       const data = await result.json();
       console.log(data);
       this.setState({ recipes: data.hits });
