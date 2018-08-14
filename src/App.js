@@ -7,17 +7,23 @@ import './assets/scss/main.scss';
 
 import Home from './pages/home/';
 import Profile from './pages/profile/';
-import RecipeDetails from './pages/recipeDetails/'
+import RecipeDetails from './pages/recipeDetails/';
+import Footer from './components/home/footer/';
+import Header from './components/home/header/';
+import Banner from './components/home/banner/';
 
 class App extends Component {
   render() {
     return (
       <Router>
-        <div>
+        <React.Fragment>
+          <Header />
+          <Banner />
           <Route exact path="/" component={Home} />
           <Route path="/profile" component={Profile} />
           <Route path="/recipe-detail" component={RecipeDetails} />
-        </div>
+          <Footer />
+        </React.Fragment>
       </Router>
     )
   }

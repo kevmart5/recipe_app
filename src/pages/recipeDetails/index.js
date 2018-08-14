@@ -1,8 +1,8 @@
-import React, { Component } from "react";
+import React from "react";
 
 import "../../assets/scss/main.scss";
 
-import Header from "../../components/home/header/";
+import Header from '../../components/home/header/';
 import Footer from '../../components/home/footer/';
 
 export class RecipeDetails extends React.Component {

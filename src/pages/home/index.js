@@ -1,23 +1,16 @@
-import React, { Component } from "react";
+import React from 'react';
 
-import "../../assets/scss/main.scss";
+import RecipeList from '../../containers/recipeList/';
 
-import Header from "../../components/home/header/";
-import SearchBar from "../../containers/home/search-section/";
-import BannerHome from "../../components/home/banner/";
-import Footer from '../../components/home/footer/';
 
-export class Home extends React.Component {
-  render() {
+export default class Home extends React.Component {
+  render () {
     return (
-      <div>
-        <Header />
-        <BannerHome />
-        <SearchBar />
-        <Footer />
-      </div>
-    );
+      <React.Fragment>
+        <RecipeList />
+      </React.Fragment>
+    ) 
   }
 }
 
-export default Home;
+
