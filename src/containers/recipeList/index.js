@@ -3,7 +3,7 @@ import React from "react";
 import Recipe from "../../components/home/recipes/";
 import api from "../../api";
 import SelectCategorie from '../categories-select/'
-import "./searchSection.scss";
+import "./recipe-list.scss";
 
 class RecipeList extends React.Component {
   constructor(props) {
@@ -13,7 +13,8 @@ class RecipeList extends React.Component {
       keyValue: "",
       recipes: [],
       isLoading: false,
-      error: false
+      error: false, 
+      category: api.categories[7].url
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -52,18 +53,6 @@ class RecipeList extends React.Component {
     const isLoading = this.state.isLoading;
     return (
       <div className="container">
-        <div className="search-form">
-          <div className="row">
-            <div className="col-md-12">
-              <h3>Search new recipes</h3>
-              <p>
-                Select one categorie and see the options that we have for you
-              </p>
-              <SelectCategorie />
-            </div>
-          </div>
-
-        </div>
         <div className="row">
           {recipes.map((rec, index) => (
             <Recipe
@@ -82,7 +71,7 @@ class RecipeList extends React.Component {
   async componentDidMount() {
     this.setState({ isLoading: true });
     try {
-      const result = await fetch(api.categories[7].url);
+      const result = await fetch(this.state.category);
       const data = await result.json();
       this.setState({ recipes: data.hits });
       this.setState({ isLoading: false });
