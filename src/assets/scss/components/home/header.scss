@@ -1,8 +1,8 @@
 .header-container {
   padding-top: 1rem;
-  background-color: #e67e22;
-  color: #ecf0f1;
-  border-bottom: 2px solid #ecf0f1;
+  background-color: $principal;
+  color: $secondary;
+  border-bottom: 2px solid $secondary;
 }
 
 .header-navigation__list {
@@ -14,7 +14,7 @@
   }
 
   .header-navigation__list-link {
-    color: #ecf0f1;
+    color: $secondary;
     text-decoration: none;  
   }
 
@@ -24,6 +24,6 @@
 }
 
 .header__branding-logo {
-  color: #ecf0f1;
+  color: $secondary;
   text-decoration: none; 
 }
