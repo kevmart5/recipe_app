@@ -1,2 +1,22 @@
-@import './global/variables.scss'
+@import './global/variables.scss';
 
+/* Containers */
+
+@import './containers/categories-select.scss';
+
+@import './containers/recipe-detail.scss';
+
+@import './containers/recipe-list.scss';
+
+
+/* Components */
+
+@import './components/home/banner.scss';
+
+@import './components/home/footer.scss';
+
+@import './components/home/header.scss';
+
+@import './components/home/recipes.scss';
+
+@import './components/home/search-section.scss';

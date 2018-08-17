@@ -3,7 +3,6 @@ import { connect } from 'react-redux'
 import { func, string, array, bool } from 'prop-types'
 import Recipe from "../../components/home/recipes/";
 import api from "../../api";
-import "./recipe-list.scss";
 
 import getAllRecipes from '../../redux/actionsCreators/recipes'
 

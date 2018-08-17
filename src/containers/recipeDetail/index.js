@@ -5,8 +5,6 @@ import { func, string, array, bool } from "prop-types";
 
 import getAllRecipes from "../../redux/reducers/recipes/";
 
-import "./recipe-detail.scss";
-
 class RecepiDetail extends React.Component {
   constructor(props) {
     super(props);

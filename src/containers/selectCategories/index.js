@@ -5,8 +5,6 @@ import Select from "react-select";
 import api from "../../api";
 import RecipeOptions from "../recipeOptions/";
 
-import "./categories-select.scss";
-
 const categories = [
   { id: 1, val: "placeholder", label: "Choose option", disabled: true },
   { id: 2, val: "tacos", label: "tacos" },

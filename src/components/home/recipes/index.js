@@ -1,8 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
-import "./recipes.scss";
-
 function Recipe(props) {
   return (
     <div className="col-xs-12 col-sm-12 col-md-12 col-lg-6">

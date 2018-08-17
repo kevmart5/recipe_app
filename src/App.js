@@ -3,8 +3,6 @@ import React, { Component } from 'react';
 import "babel-polyfill";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
-import './assets/scss/main.scss';
-
 import Home from './pages/home/';
 import Profile from './pages/profile/';
 import RecipeDetails from './pages/recipeDetails/';

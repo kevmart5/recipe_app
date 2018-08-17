@@ -1,7 +1,5 @@
 import React from "react";
 
-import './banner.scss'
-
 function BannerHome () {
   return (
     <div className="banner-home">

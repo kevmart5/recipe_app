@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
-import './header.scss';
-
 function Navigation(props) {
   return (
     <nav className="header-navigation">
