@@ -1,9 +1,16 @@
-.recipe {
+.card {
+  margin-bottom: 2rem;
+}
+
+.recipe__card {
   &__card {
     margin-bottom: 3rem;
   }
+  .card__body-image {
+    width: 100%;
+  }
 
-  .card-body {
-    height: 15rem;
+  .card__body-button {
+
   }
 }

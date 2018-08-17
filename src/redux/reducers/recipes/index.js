@@ -1,28 +1,36 @@
-import * as a from '../../actions/types'
+import * as a from "../../actions/types";
 
 const INITIAL_STATE = {
-  jobs: [],
+  recipes: [],
   isLoading: false,
-  error: ''
-}
+  error: ""
+};
 
-function recipesReducer (state = INITIAL_STATE, action) {
+function recipesReducer(state = INITIAL_STATE, action) {
   switch (action.type) {
     case a.RECIPES_GETALL_REQUEST:
-      console.log('get all....')
-      return true
+      return {
+        ...state,
+        isLoading: true
+      };
 
     case a.RECIPES_GETALL_SUCCESS:
-      console.log('get all success....')
-      return true
+      return {
+        ...state,
+        recipes: action.payload,
+        isLoading: false
+      };
 
     case a.RECIPES_GETALL_FAILURE:
-      console.log('get all fail....')
-      return true
+      return {
+        ...state,
+        error: action.error,
+        isLoading: false
+      };
 
     default:
-      return state
+      return state;
   }
 }
 
-export default recipesReducer
+export default recipesReducer;

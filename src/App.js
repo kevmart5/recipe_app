@@ -11,6 +11,8 @@ import RecipeDetails from './pages/recipeDetails/';
 import Footer from './components/home/footer/';
 import Header from './components/home/header/';
 import Banner from './components/home/banner/';
+import SelectCategorie from './containers/selectCategories/';
+import MainHome from './components/home/main/'
 
 class App extends Component {
   render() {

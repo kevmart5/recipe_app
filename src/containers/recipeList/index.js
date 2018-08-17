@@ -1,9 +1,11 @@
 import React from "react";
-
+import { connect } from 'react-redux'
+import { func, string, array, bool } from 'prop-types'
 import Recipe from "../../components/home/recipes/";
 import api from "../../api";
-import SelectCategorie from '../categories-select/'
 import "./recipe-list.scss";
+
+import getAllRecipes from '../../redux/actionsCreators/recipes'
 
 class RecipeList extends React.Component {
   constructor(props) {
@@ -13,75 +15,48 @@ class RecipeList extends React.Component {
       keyValue: "",
       recipes: [],
       isLoading: false,
-      error: false, 
-      category: api.categories[7].url
+      error: false,
+      category: api.categories[7].url,
+      getAllRecipes: func
     };
-
-    this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
-    this.getRecipes = this.getRecipes.bind(this);
-  }
-
-  handleChange(event) {
-    this.setState({ keyValue: event.target.value });
-  }
-
-  async handleSubmit(event) {
-    event.preventDefault();
-    this.getRecipes(this.state.keyValue);
-  }
-
-  async getRecipes(value) {
-    const searchInput = api.categories.filter(n => n.category === value);
-    const url = searchInput.map(u => u.url);
-    this.setState({ isLoading: true });
-    try {
-      const result = await fetch(url[0]);
-      const data = await result.json();
-      this.setState({ recipes: data.hits });
-      this.setState({ isLoading: false });
-      console.log(this.state.recipes);
-    } catch (err) {
-      this.setState({
-        error
-      });
-    }
   }
 
   render() {
-    const { recipes } = this.state;
+    const { recipes } = this.props;
     const isLoading = this.state.isLoading;
     return (
-      <div className="container">
-        <div className="row">
-          {recipes.map((rec, index) => (
-            <Recipe
-              label={rec.recipe.label}
-              image={rec.recipe.image}
-              dietLabels={rec.recipe.dietLabels}
-              calories={rec.recipe.calories}
-              key={index}
-            />
-          ))}
+      <div className="col-xs-12 col-sm-12 col-md-10 recipe__main">
+        <div className="container">
+          <div className="row">
+            {recipes.map((rec, index) => (
+              <Recipe
+                label={rec.recipe.label}
+                image={rec.recipe.image}
+                dietLabels={rec.recipe.dietLabels}
+                calories={rec.recipe.calories}
+                recipe={rec.recipe}
+                key={index}
+              />
+            ))}
+          </div>
         </div>
       </div>
     );
   }
 
-  async componentDidMount() {
-    this.setState({ isLoading: true });
-    try {
-      const result = await fetch(this.state.category);
-      const data = await result.json();
-      this.setState({ recipes: data.hits });
-      this.setState({ isLoading: false });
-      console.log(this.state.recipes);
-    } catch (err) {
-      this.setState({
-        error
-      });
-    }
+  async componentDidMount () {
+    this.props.getAllRecipes()
   }
 }
 
-export default RecipeList;
+const mapStateToProps = state => ({
+  recipes: state.recipes.recipes,
+  isLoading: state.recipes.isLoading,
+  error: state.recipes.error
+})
+
+const mapDispatchToProps = {
+  getAllRecipes
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(RecipeList)

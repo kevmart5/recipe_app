@@ -1,21 +1,20 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
-import Provider from "react-redux";
+import {Provider} from "react-redux";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import store from "./redux/store";
 import App from "./App";
 
-class Index extends Component {
+export default class Index extends Component {
   render() {
     return (
-      /*<Provider store={store}>
+      <Provider store={store}>
         <App />
-      </Provider>*/
-      <App />
+      </Provider>
     );
-  }
+  } 
 } 
 
 ReactDOM.render(<Index />, document.getElementById("root"));

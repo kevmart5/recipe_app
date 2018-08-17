@@ -1,9 +1,14 @@
-.search-form {
-  padding-bottom: 5rem;
+.categories__options {
   padding-top: 5rem;
-  text-align: center;
-}
 
-.select__categories {
-  padding-bottom: 8rem;
+  .categories__list{
+
+  }
+
+  .categories__list-link {
+    z-index: 2;
+    color: #fff;
+    background-color: #e67e22;
+    border-color: #e67e22;
+  }
 }

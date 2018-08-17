@@ -1,17 +1,15 @@
 import React from "react";
 
-import "../../assets/scss/main.scss";
+import RecepiDetail from '../../containers/recipeDetail/'
 
-import Header from '../../components/home/header/';
-import Footer from '../../components/home/footer/';
+import "../../assets/scss/main.scss";
 
 export class RecipeDetails extends React.Component {
   render() {
     return (
-      <div>
-        <Header />
-        <Footer />
-      </div>
+      <React.Fragment>
+        <RecepiDetail />
+      </React.Fragment>
     );
   }
 }
