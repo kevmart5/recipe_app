@@ -36,6 +36,7 @@ class RecipeList extends React.Component {
                 calories={rec.recipe.calories}
                 recipe={rec.recipe}
                 key={index}
+                recipeIndex={index}
               />
             ))}
           </div>
@@ -45,7 +46,8 @@ class RecipeList extends React.Component {
   }
 
   async componentDidMount () {
-    this.props.getAllRecipes()
+    const url = api.categories[2].url;
+    this.props.getAllRecipes(url)
   }
 }
 

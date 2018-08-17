@@ -2,7 +2,7 @@ import * as a from '../actions/types'
 
 import api from '../../api'
 
-export default function getAllRecipes () {
+export default function getAllRecipes (url) {
   return async dispatch => {
     // Initiate loading state
     dispatch({
@@ -11,15 +11,13 @@ export default function getAllRecipes () {
 
     try {
       // Call the API
-      const response = await fetch(api.categories[7].url)
+      const response = await fetch(url)
       const result = await response.json()
-      // Update payload in reducer on success
       dispatch({
         type: a.RECIPES_GETALL_SUCCESS,
         payload: result.hits
       })
     } catch (err) {
-      // Update error in reducer on failure
       dispatch({
         type: a.RECIPES_GETALL_FAILURE,
         error: err

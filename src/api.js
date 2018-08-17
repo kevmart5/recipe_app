@@ -1,7 +1,7 @@
 const _KEY = "465ddbff109a7dbb37d2c241a60a4426";
 const _ID = "bf96a2c4";
 const API = 'https://api.edamam.com/search?q='
-const credentials = `&app_id=${_ID}&app_key=${_KEY}&from=0&to=21`;
+const credentials = `&app_id=${_ID}&app_key=${_KEY}&from=0&to=22`;
 
 export default {
   categories: [

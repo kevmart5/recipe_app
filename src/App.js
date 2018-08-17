@@ -11,8 +11,6 @@ import RecipeDetails from './pages/recipeDetails/';
 import Footer from './components/home/footer/';
 import Header from './components/home/header/';
 import Banner from './components/home/banner/';
-import SelectCategorie from './containers/selectCategories/';
-import MainHome from './components/home/main/'
 
 class App extends Component {
   render() {
@@ -20,10 +18,9 @@ class App extends Component {
       <Router>
         <React.Fragment>
           <Header />
-          <Banner />
           <Route exact path="/" component={Home} />
           <Route path="/profile" component={Profile} />
-          <Route path="/recipe-detail" component={RecipeDetails} />
+          <Route path="/recipe-detail/:id" component={RecipeDetails} />
           <Footer />
         </React.Fragment>
       </Router>

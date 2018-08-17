@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import "./recipes.scss";
 
 function Recipe(props) {
-  console.log(props.recipe);
   return (
     <div className="col-xs-12 col-sm-12 col-md-12 col-lg-6">
       <div className="card text-center">
@@ -19,7 +18,7 @@ function Recipe(props) {
         </div>
         <div className="card-footer text-muted">
           <Link
-          to={{ pathname: '/recipe-detail', state: { recipe: props.recipe} }}
+            to={{ pathname: `/recipe-detail/${props.recipeIndex}`, state: { recipe: props.recipeIndex} }}
             className="btn btn-primary card__body-button"
           >
             View recipe
