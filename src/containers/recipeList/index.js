@@ -6,7 +6,7 @@ import api from "../../api";
 
 import getAllRecipes from '../../redux/actionsCreators/recipes'
 
-class RecipeList extends React.Component {
+export default class RecipeList extends React.Component {
   constructor(props) {
     super(props);
 
@@ -23,6 +23,7 @@ class RecipeList extends React.Component {
   render() {
     const { recipes } = this.props;
     const isLoading = this.state.isLoading;
+    console.log('props', this.props)
     return (
       <div className="col-xs-12 col-sm-12 col-md-10 recipe__main">
         <div className="container">
@@ -43,21 +44,4 @@ class RecipeList extends React.Component {
       </div>
     );
   }
-
-  async componentDidMount () {
-    const url = api.categories[2].url;
-    this.props.getAllRecipes(url)
-  }
 }
-
-const mapStateToProps = state => ({
-  recipes: state.recipes.recipes,
-  isLoading: state.recipes.isLoading,
-  error: state.recipes.error
-})
-
-const mapDispatchToProps = {
-  getAllRecipes
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(RecipeList)

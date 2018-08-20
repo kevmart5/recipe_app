@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Select from "react-select";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 import api from "../../api";
 import RecipeOptions from "../recipeOptions/";
@@ -33,18 +34,26 @@ class SelectCategorie extends React.Component {
   }
 
   render() {
-    const { categorySelected } = this.state;
     return (
       <React.Fragment>
         <div className="col-xs-12 col-sm-12 col-md-12 col-lg-2">
           <div className="categories__options">
             <h5>Select categories</h5>
             <ul className="list-group categories__list">
-              <li className="list-group-item active categories__list-link">Fast food</li>
-              <li className="list-group-item list-group-item-action">Tacos</li>
-              <li className="list-group-item list-group-item-action">Pizza</li>
-              <li className="list-group-item list-group-item-action">Hamburgers</li>
-              <li className="list-group-item list-group-item-action">French fries</li>
+              <li className="list-group-item categories__list-link">Categories</li>
+              <li className="list-group-item">
+                <Link to={`/category/tacos`} >Tacos</Link>
+              </li>
+              <li className="list-group-item">
+                <Link to={`/category/pizza`}>Pizza</Link>
+              </li>
+              <li className="list-group-item">
+                <Link to={`/category/hamburgers`}>Hamburgers</Link>
+              </li>
+              <li className="list-group-item">
+                <Link to={`/category/french fries`}>French fries</Link>
+              </li>
+              
             </ul>
           </div>
         </div>

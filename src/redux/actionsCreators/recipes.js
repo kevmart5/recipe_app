@@ -1,7 +1,5 @@
 import * as a from '../actions/types'
 
-import api from '../../api'
-
 export default function getAllRecipes (url) {
   return async dispatch => {
     // Initiate loading state

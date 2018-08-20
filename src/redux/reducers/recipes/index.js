@@ -1,9 +1,11 @@
 import * as a from "../../actions/types";
+import api from '../../../api'
 
 const INITIAL_STATE = {
   recipes: [],
   isLoading: false,
-  error: ""
+  error: "",
+  apiUrl: api.categories[5].url
 };
 
 function recipesReducer(state = INITIAL_STATE, action) {
@@ -28,6 +30,13 @@ function recipesReducer(state = INITIAL_STATE, action) {
         isLoading: false
       };
 
+    case a.RECIPES_CHANGE_URL:
+      return {
+        ...state,
+        isLoading: false,
+        apiUrl: action.payload
+      }
+      
     default:
       return state;
   }
