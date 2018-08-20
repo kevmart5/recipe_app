@@ -7,7 +7,8 @@
 }
 
 .banner-home__title {
-  border: 3px solid $principal;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   color: $secondary;
   background-color: rgba($color: $principal, $alpha: 0.6);
 }

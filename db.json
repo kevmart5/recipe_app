@@ -93,257 +93,99 @@
       "id": 2
     },
     {
-      "label": "Cheddar And Blue Hamburger",
-      "image": "https://www.edamam.com/web-img/e88/e8808d5d35b2e62a2a10414bac64613a.jpg",
+      "label": "Crisp Tacos Picadillo",
+      "image": "https://www.edamam.com/web-img/32d/32da8c201c42d8aae7a7f51449c83e2a.jpg",
       "ingredients": [
         [
           {
-            "text": "4 tablespoons butter",
-            "weight": 56.8
+            "text": "2 tsp Vegetable Oil (picadillo)",
+            "weight": 9.333333333964529
           },
           {
-            "text": "2 fresh baked hamburger buns, soft",
-            "weight": 84
+            "text": "1/2 x white onion (large), chopped (1 1/2 cups) (picadillo)",
+            "weight": 240
           },
           {
-            "text": "4 slices, Polish Ham",
-            "weight": 112
+            "text": "1 lb Ground Chuck (80 percent lean) (picadillo)",
+            "weight": 453.59237
           },
           {
-            "text": "18 ounces freshly ground beef, 15/85 combo, measured out in 3 oz. balls",
-            "weight": 510.29141625
+            "text": "1 tbsp minced garlic cloves(1 to 2 cloves) (picadillo)",
+            "weight": 4.5
           },
           {
-            "text": "1 small onion, finely chopped",
-            "weight": 70
+            "text": "2 x tomatoes (medium), diced (2 3/4 cups) (picadillo)",
+            "weight": 409.75
           },
           {
-            "text": "1 glove garlic, finely chopped",
-            "weight": 24
+            "text": "1 1/2 tsp Paprika (picadillo)",
+            "weight": 3.4499999999999997
           },
           {
-            "text": "2 teaspoons season salt",
-            "weight": 12
+            "text": "1 tsp ancho chile powder (picadillo)",
+            "weight": 2.7
           },
           {
-            "text": "2 teaspoons worcestershire sauce",
-            "weight": 11.458333333914512
+            "text": "1 tsp Dried Oregano (picadillo)",
+            "weight": 1
           },
           {
-            "text": "pepper, freshly ground",
-            "weight": 3.520940665001744
+            "text": "1 tsp coarse salt (picadillo)",
+            "weight": 4.854166666912875
           },
           {
-            "text": "4 ounces sharp cheddar, I like white cheddar fr/Vermont",
-            "weight": 113.3980925
+            "text": "1 tsp freshly ground pepper (picadillo)",
+            "weight": 2.9
           },
           {
-            "text": "2 ounces blue cheese, Maytag is my fav.",
-            "weight": 56.69904625
+            "text": "3/4 tsp Ground Cumin (picadillo)",
+            "weight": 1.5750000000000002
           },
           {
-            "text": "1 perfectly ripe tomato, sliced",
-            "weight": 123
+            "text": "1 1/2 cup water (picadillo)",
+            "weight": 355.5
           },
           {
-            "text": "yellow mustard",
-            "weight": 17.604703325008717
+            "text": "3 tsp White Vinegar (picadillo)",
+            "weight": 15
+          },
+          {
+            "text": "vegetable oil for frying (tacos)",
+            "weight": 26.984506232011935
+          },
+          {
+            "text": "20 x Corn Tortillas (tacos)",
+            "weight": 480
+          },
+          {
+            "text": "shredded cheddar cheese (tacos)",
+            "weight": 0
           }
         ]
       ],
       "id": 3
     },
     {
-      "label": "Classic Hamburger",
-      "image": "https://www.edamam.com/web-img/b96/b96529b3cb83a4dfd78f33a16b99215e.jpg",
+      "label": "Chicken Teriyaki",
+      "image": "https://www.edamam.com/web-img/551/551b906bafd4c45d50033742eaf00c02.jpg",
+      "calories": 1020.7600000000001,
       "ingredients": [
         [
           {
-            "text": "1 medium onion, chopped",
-            "weight": 110
-          },
-          {
-            "text": "1 tablespoon canola oil",
+            "text": "1 tbsp. vegetable oil",
             "weight": 14
           },
           {
-            "text": "2 tablespoons ketchup, divided",
-            "weight": 34
+            "text": "4 pieces chicken, trimmed, skin pierced with a fork",
+            "weight": 357.6
           },
           {
-            "text": "2 tablespoons low-fat mayonnaise",
-            "weight": 29.2
-          },
-          {
-            "text": "2 teaspoons dill pickle relish",
-            "weight": 10
-          },
-          {
-            "text": "1 teaspoon distilled white vinegar",
-            "weight": 5
-          },
-          {
-            "text": "1 pound lean (90% or leaner) ground beef",
-            "weight": 453.59237
-          },
-          {
-            "text": "2 tablespoons worcestershire sauce or steak sauce",
-            "weight": 34
-          },
-          {
-            "text": "1/2 teaspoon freshly ground pepper",
-            "weight": 1.45
-          },
-          {
-            "text": "4 sesame-seed or other hamburger buns, toasted",
-            "weight": 168
-          },
-          {
-            "text": "4 slices tomato",
-            "weight": 108
-          },
-          {
-            "text": "4 leaves green-leaf lettuce",
-            "weight": 20
+            "text": "½ cup Teriyaki Sauce",
+            "weight": 144
           }
         ]
       ],
       "id": 4
-    },
-    {
-      "label": "Master Recipe For Cool Noodle Salads",
-      "image": "https://www.edamam.com/web-img/b3a/b3a844fb4542fd2c8c4fdb154af27712.jpg",
-      "ingredients": [
-        [
-          {
-            "text": "1/3 to 1/2 cup roughly chopped or small whole mint leaves",
-            "weight": 28.5
-          },
-          {
-            "text": "8 oz. dried rice vermicelli",
-            "weight": 226.796185
-          },
-          {
-            "text": "1/3 to 1/2 cup roughly chopped or small basil or Thai basil leaves",
-            "weight": 10
-          },
-          {
-            "text": "1-1/2 cups peeled, seeded, and julienned cucumber",
-            "weight": 156
-          },
-          {
-            "text": "12 sprigs fresh cilantro",
-            "weight": 26.666666666666668
-          },
-          {
-            "text": "2 cups washed and shredded romaine, red, or green leaf lettuce",
-            "weight": 110
-          },
-          {
-            "text": "2 Tbs. chopped roasted peanuts",
-            "weight": 18.249999999691447
-          },
-          {
-            "text": "2 cups fresh, crisp bean sprouts",
-            "weight": 208
-          },
-          {
-            "text": "1 recipe for Warm Lemon Grass Shrimp, Vietnamese Grilled Pork, or Stir-Fried Vegetables.",
-            "weight": 287.8787878787879
-          }
-        ]
-      ],
-      "id": 5
-    },
-    {
-      "label": "Turkey with Two Salads",
-      "image": "https://www.edamam.com/web-img/23f/23fe5075963e139b605666c784825a77.jpg",
-      "ingredients": [
-        [
-          {
-            "text": "6 teaspoons olive oil",
-            "weight": 27
-          },
-          {
-            "text": "1 package (10 ounces) white mushrooms trimmed and thinly sliced coarse salt and ground pepper",
-            "weight": 283.49523125
-          },
-          {
-            "text": "1 package (10 ounces) white mushrooms trimmed and thinly sliced coarse salt and ground pepper",
-            "weight": 283.49523125
-          },
-          {
-            "text": "1 package (10 ounces) white mushrooms trimmed and thinly sliced coarse salt and ground pepper",
-            "weight": 283.49523125
-          },
-          {
-            "text": "1 medium yellow onion finely chopped",
-            "weight": 110
-          },
-          {
-            "text": "1 cup israeli couscous",
-            "weight": 173
-          },
-          {
-            "text": "2/3 cup dried cranberries or cherries",
-            "weight": 80.8080808080808
-          },
-          {
-            "text": "1/4 cup fresh lime juice (from about 2 limes)",
-            "weight": 60.5
-          },
-          {
-            "text": "1 tablespoon dijon mustard",
-            "weight": 15
-          },
-          {
-            "text": "3 packed cups loose spinach (about 5 ounces) trimmed, well washed and dried 1 pound cooked turkey (1/2 reserved spice-rubbed turkey breast), thinly sliced, room temperature",
-            "weight": 420
-          }
-        ]
-      ],
-      "id": 6
-    },
-    {
-      "label": "Swiss Steak",
-      "image": "https://www.edamam.com/web-img/5ab/5ab773ac8111a2624cbc6461afe88dde.JPG",
-      "ingredients": [
-        [
-          {
-            "text": "1-1 1/2 pound edge of eye or round steak",
-            "weight": 566.9904625
-          },
-          {
-            "text": "2 cans stewed tomato",
-            "weight": 234.35555555555553
-          },
-          {
-            "text": "1 small or med/small onion",
-            "weight": 70
-          },
-          {
-            "text": "1 bell pepper",
-            "weight": 119
-          },
-          {
-            "text": "2 tablespoons flour (to dredge the meat)",
-            "weight": 15.624999999735829
-          },
-          {
-            "text": "Salt and pepper to taste",
-            "weight": 6.035826108331748
-          },
-          {
-            "text": "Salt and pepper to taste",
-            "weight": 3.017913054165874
-          },
-          {
-            "text": "Olive oil to coat fry pan",
-            "weight": 13.681205845551961
-          }
-        ]
-      ],
-      "id": 7
     }
   ]
 }

@@ -23,7 +23,40 @@
   }
 }
 
-.header__branding-logo {
-  color: $secondary;
-  text-decoration: none; 
+@media screen and (min-width: 575px) { 
+  .dropdown__navigation {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .logo__element {
+    display: none;
+  }
+
+  .principal__navigation {
+    display: none;
+  }
+
+  .dropdown__navigation {
+    margin-bottom: 1rem;
+    text-align: right;
+
+    .btn-secondary{
+      color: $secondary;
+      background-color: $principal;
+      border-color: $principal
+    }
+
+    .btn-secondary:hover {
+      color: $secondary;
+      background-color: $dark;
+      border-color: $dark;
+    }
+
+    .dropdown__menu-link {
+      color: $principal;
+      text-decoration: none;
+    }
+  }
 }

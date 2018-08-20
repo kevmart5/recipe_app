@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 import getMyBooks from '../../redux/actionsCreators/myBooks';
-import MyBooks from './myBooks';
+import FavoriteDetail from './Favorite';
 
 const mapStateToProps = (state, ownProps) => {
   return {
@@ -14,4 +14,4 @@ const mapDispatchToProps = {
   getMyBooks
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(MyBooks);
+export default connect(mapStateToProps, mapDispatchToProps)(FavoriteDetail);

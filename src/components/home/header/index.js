@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import MenuDropDown from '../header/dropdownMenu'
 
 function Navigation(props) {
   return (
@@ -19,7 +20,7 @@ function Navigation(props) {
 function Logo() {
   return (
     <div className="header__branding">
-      <a href="#" className="header__branding-logo">Logo</a>
+      <p>Find it!</p>
     </div>
   )
 }
@@ -30,13 +31,18 @@ class Header extends Component {
       <header className="header-container">
         <div className="container">
           <div className="row">
-            <div className="col-md-10">
-              <div>
+            <div className="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+              <div className="principal__navigation">
                 <Navigation />
               </div>
+              <div className="dropdown__navigation">
+                <MenuDropDown />
+              </div>
             </div>
-            <div className="col-md-2">
-              <Logo />
+            <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+              <div className="logo__element">
+                <Logo />
+              </div>
             </div>
           </div>
         </div>

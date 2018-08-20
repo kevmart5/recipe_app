@@ -24,6 +24,7 @@ class RecepiDetail extends React.Component {
     axios.post(LocalServer.categories[1].url, {
         label: this.state.recipeDetail.label,
         image: this.state.recipeDetail.image,
+        calories: this.state.recipeDetail.calories,
         ingredients: [
           this.state.recipeDetail.ingredients
         ]

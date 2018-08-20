@@ -11,9 +11,8 @@ export default class MyBooks extends React.Component {
 
   render() {
     const { myBooks } = this.props
-    console.log(this.props.isLoading);
-
-    if(this.props.isLoading){
+    console.log(myBooks);
+    if(this.props.isLoading || myBooks.length === 0){
       return (<p>Loading</p>);
     }else {
       return (
@@ -21,7 +20,7 @@ export default class MyBooks extends React.Component {
           <div className="container-fluid">
             <div className="row">
               <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <div className="text-center">
+                <div className="text-center myBooks__title">
                   <h1>My favorite recipes</h1>
                 </div>
               </div>
@@ -31,9 +30,9 @@ export default class MyBooks extends React.Component {
             <div className="row">
               {
                 myBooks.map((e, i) => (
-                  <div className="col-xs-12 col-sm-12 col-md-12 col-lg-4">
-                    <div className="text-center">
-                      <Favorites label={e.label} image={e.image} key={i}/>
+                  <div className="col-xs-12 col-sm-12 col-md-12 col-lg-4" key={i}>
+                    <div className="text-center" key={i}>
+                      <Favorites recipe={e} key={i}/>
                     </div>
                   </div>
                 ))
@@ -43,8 +42,5 @@ export default class MyBooks extends React.Component {
         </React.Fragment>
       );
     }
-
-
-
   }
 }
