@@ -15,7 +15,6 @@ export default class RecipeList extends React.Component {
       recipes: [],
       isLoading: false,
       error: false,
-      category: api.categories[7].url,
       getAllRecipes: func
     };
   }
@@ -31,7 +30,7 @@ export default class RecipeList extends React.Component {
               <div className="text-center recipe-list__title">
               {
                 this.props.categoryParam ? (<h3>Our results for {this.props.categoryParam}</h3>) 
-                : (<h3>Welcome</h3>)
+                : (<h3>Welcome to find it!</h3>)
               }
                 
               </div>

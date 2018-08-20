@@ -10,7 +10,7 @@ function Favorites(props) {
         <img src={props.recipe.image} className="card__body-image" />
       </div>
       <div className="card-footer text-muted">
-        <Link to={{pathname: `/favorites/${props.recipe.id}`, state:{recipe: props.recipe} }} >
+        <Link to={{pathname: `/favorites/${props.recipe.id}`, state:{recipe: props.recipe} }} className="btn btn-primary card__body-button">
           View recipe
         </Link>
       </div>
