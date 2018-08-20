@@ -1,0 +1,15 @@
+$principal: #c0392b;
+$secondary: #ecf0f1;
+$dark: #e74c3c;
+$grey: #bdc3c7;
+
+.btn-primary {
+  color: #ecf0f1;
+  background-color: #c0392b;
+  border-color: #c0392b;
+}
+
+.btn-primary:hover {
+  background-color: #e74c3c;
+  border-color: #c0392b;
+}

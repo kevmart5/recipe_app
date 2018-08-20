@@ -1,0 +1,168 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "users": [
+    {
+      "id": 1,
+      "name": "Kevin Martínez",
+      "books": [
+        {
+          "id": 1,
+          "name": "Test 1",
+          "total_recipes": 5
+        }
+      ]
+    }
+  ],
+  "recipes": [
+    {
+      "label": "French Vanilla Ice Cream",
+      "image": "https://www.edamam.com/web-img/08b/08b88991daa6e51517b5dae49e90013c.jpg",
+      "calories": 1841.276,
+      "ingredients": [
+        [
+          {
+            "text": "1 vanilla bean, or 1 teaspoon nielsen-massey vanilla bean paste",
+            "weight": 5
+          },
+          {
+            "text": "3 cups whole milk",
+            "weight": 732
+          },
+          {
+            "text": "1/2 cup pure cane sugar",
+            "weight": 100
+          },
+          {
+            "text": "1/4 teaspoon fine sea salt",
+            "weight": 1.5
+          },
+          {
+            "text": "2 extra large eggs",
+            "weight": 112
+          },
+          {
+            "text": "1 teaspoon bourbon madagascar vanilla extract (the vanilla i prefer for all desserts)",
+            "weight": 4.2
+          },
+          {
+            "text": "1 cup heavy cream",
+            "weight": 238
+          }
+        ]
+      ],
+      "id": 1
+    },
+    {
+      "label": "Beeramisu and Kidamisu Desserts",
+      "image": "https://www.edamam.com/web-img/9de/9de13ba15ff6893e0221ffa8cfb2ed15.jpeg",
+      "calories": 5819.5979054,
+      "ingredients": [
+        [
+          {
+            "text": "8 large eggs, separated",
+            "weight": 400
+          },
+          {
+            "text": "1/2 cup sugar",
+            "weight": 100
+          },
+          {
+            "text": "1 pound mascarpone cheese, at room temperature",
+            "weight": 453.59237
+          },
+          {
+            "text": "2 teaspoons vanilla extract",
+            "weight": 8.4
+          },
+          {
+            "text": "1 bottle (pint) chocolate stout beer",
+            "weight": 356
+          },
+          {
+            "text": "48 ladyfingers",
+            "weight": 528
+          },
+          {
+            "text": "2 cups hot chocolate, cooled",
+            "weight": 500
+          },
+          {
+            "text": "1 cup shaved semisweet chocolate",
+            "weight": 173
+          }
+        ]
+      ],
+      "id": 2
+    },
+    {
+      "label": "Chicken Vesuvio",
+      "image": "https://www.edamam.com/web-img/e42/e42f9119813e890af34c259785ae1cfb.jpg",
+      "calories": 4181.274538701081,
+      "ingredients": [
+        [
+          {
+            "text": "1/2 cup olive oil",
+            "weight": 108
+          },
+          {
+            "text": "5 cloves garlic, peeled",
+            "weight": 15
+          },
+          {
+            "text": "2 large russet potatoes, peeled and cut into chunks",
+            "weight": 738
+          },
+          {
+            "text": "1 3-4 pound chicken, cut into 8 pieces (or 3 pound chicken legs)",
+            "weight": 1587.5732950000001
+          },
+          {
+            "text": "3/4 cup white wine",
+            "weight": 110.25
+          },
+          {
+            "text": "3/4 cup chicken stock",
+            "weight": 180
+          },
+          {
+            "text": "3 tablespoons chopped parsley",
+            "weight": 11.399999999999999
+          },
+          {
+            "text": "1 tablespoon dried oregano",
+            "weight": 5.9999999998985585
+          },
+          {
+            "text": "Salt and pepper",
+            "weight": 17.341339769999394
+          },
+          {
+            "text": "Salt and pepper",
+            "weight": 8.670669884999697
+          },
+          {
+            "text": "1 cup frozen peas, thawed",
+            "weight": 134
+          }
+        ]
+      ],
+      "id": 3
+    }
+  ]
+}
