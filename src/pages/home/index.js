@@ -1,14 +1,3 @@
-import React, { Component } from "react";
+import HomeContainer from './homeContainer';
 
-import '../../assets/scss/main.scss'
-
-import Header from "../../components/home/header/";
-
-
-export class Home extends React.Component {
-  render() {
-    return <Header />;
-  }
-}
-
-export default Home;
+export default HomeContainer;

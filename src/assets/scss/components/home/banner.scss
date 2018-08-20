@@ -1,0 +1,14 @@
+.banner-home {
+  height: 80vh;
+  background-image: url('../imgs/chicken-3.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 15rem; 
+}
+
+.banner-home__title {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: $secondary;
+  background-color: rgba($color: $principal, $alpha: 0.6);
+}
