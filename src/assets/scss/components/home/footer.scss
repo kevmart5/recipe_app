@@ -1,0 +1,31 @@
+.footer-section {
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+  background-color: $principal;
+  color: $secondary;
+  border-bottom: 2px solid $secondary;
+  margin-top: 5rem;
+
+  .footer__navigation-list {
+    padding: 0;
+  }
+
+  .footer__navigation-item {
+    list-style: none;
+    display: inline;
+    margin-right: 5%;
+  }
+
+  .footer__navigation-link{
+    color: $secondary;
+    text-decoration: none;
+  }
+
+  .footer__api-element-left {
+    margin-right: 2%;
+  }
+
+  .footer__api-element-right {
+    margin-left: 2%;
+  }
+}

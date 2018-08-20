@@ -1,0 +1,23 @@
+.categories__options {
+  padding-top: 5rem;
+
+  .categories__list-link {
+    z-index: 2;
+    color: $secondary;
+    background-color: $principal;
+    border-color: $principal;
+  }
+
+  .categories__list-route {
+    color: $dark
+  }
+
+  .categories__list-route:hover {
+    text-decoration: none
+  }
+
+  .categories__list-anchor-active {
+    color: $secondary;
+    text-decoration: none;
+  }
+}
