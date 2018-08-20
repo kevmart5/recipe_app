@@ -9,10 +9,7 @@ function Navigation(props) {
           <Link to={`/`} className="header-navigation__list-link">All recipes</Link>
         </li>
         <li className="header-navigation__list-item">
-          <Link to={`/about`} className="header-navigation__list-link">Profile</Link>
-        </li>
-        <li className="header-navigation__list-item">
-          <a href="#" className="header-navigation__list-link">My books</a>
+          <Link to={'/myBooks'} className="header-navigation__list-link">My books</Link>
         </li>
       </ul>
     </nav>

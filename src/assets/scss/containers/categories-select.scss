@@ -1,14 +1,14 @@
 .categories__options {
   padding-top: 5rem;
 
-  .categories__list{
-
-  }
-
   .categories__list-link {
     z-index: 2;
     color: $secondary;
     background-color: $principal;
     border-color: $principal;
+  }
+
+  .categories__list-route {
+    color: $grey
   }
 }

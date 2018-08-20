@@ -1,6 +1,5 @@
 import React from "react";
 import SelectCategories from "../../containers/selectCategories";
-import Banner from "../../components/home/banner";
 import RecipeList from "../../containers/recipeList";
 
 export default class Home extends React.Component {

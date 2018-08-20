@@ -4,11 +4,11 @@ import "babel-polyfill";
 import { BrowserRouter as Router, Route, Link, BrowserHistory  } from "react-router-dom";
 
 import Home from './pages/home/';
-import Profile from './pages/profile/';
 import RecipeDetails from './pages/recipeDetails/';
 import Footer from './components/home/footer/';
 import Banner from './components/home/banner/';
 import Header from './components/home/header/';
+import MyBooks from './pages/myBooks/';
 
 class App extends Component {
   render() {
@@ -19,8 +19,8 @@ class App extends Component {
           <Banner />
           <Route exact path="/" component={Home} />
           <Route path="/category/:filter" component={Home} />
-          <Route path="/profile" component={Profile} />
           <Route path="/recipe-detail/:id" component={RecipeDetails} />
+          <Route path="/myBooks" component={MyBooks} />
           <Footer />
         </React.Fragment>
       </Router>

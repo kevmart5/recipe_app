@@ -5,13 +5,6 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 import api from "../../api";
 import RecipeOptions from "../recipeOptions/";
-
-const categories = [
-  { id: 1, val: "placeholder", label: "Choose option", disabled: true },
-  { id: 2, val: "tacos", label: "tacos" },
-  { id: 3, val: "pizza", label: "pizza" },
-  { id: 4, val: "bread", label: "bread" }
-];
 class SelectCategorie extends React.Component {
   constructor(props) {
     super(props);
@@ -24,13 +17,6 @@ class SelectCategorie extends React.Component {
       category: "",
       categorySelected: ""
     };
-
-    this.handleSelectChange = this.handleSelectChange.bind(this);
-  }
-
-  handleSelectChange(categorySelected) {
-    this.setState({ categorySelected });
-    console.log(`Option selected:`, categorySelected);
   }
 
   render() {
@@ -38,22 +24,19 @@ class SelectCategorie extends React.Component {
       <React.Fragment>
         <div className="col-xs-12 col-sm-12 col-md-12 col-lg-2">
           <div className="categories__options">
-            <h5>Select categories</h5>
-            <ul className="list-group categories__list">
-              <li className="list-group-item categories__list-link">Categories</li>
-              <li className="list-group-item">
-                <Link to={`/category/tacos`} >Tacos</Link>
+            <ul className="list-group .categories__list">
+              <li className="list-group-item categories__list-link">
+                <Link to={'/'}>All categories</Link>
               </li>
-              <li className="list-group-item">
-                <Link to={`/category/pizza`}>Pizza</Link>
-              </li>
-              <li className="list-group-item">
-                <Link to={`/category/hamburgers`}>Hamburgers</Link>
-              </li>
-              <li className="list-group-item">
-                <Link to={`/category/french fries`}>French fries</Link>
-              </li>
-              
+              {
+                api.categories.map((e, i) => (
+                  <li 
+                  className="list-group-item list-group-item-action"
+                  key={i}>
+                    <Link className="categories__list-route" to={`/category/${e.category}`}>{e.category}</Link>
+                  </li>
+                ))
+              }
             </ul>
           </div>
         </div>

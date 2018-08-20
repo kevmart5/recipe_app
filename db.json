@@ -1,20 +1,308 @@
 {
   "posts": [
-    { "id": 1, "title": "json-server", "author": "typicode" }
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
   ],
   "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 }
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
   ],
-  "profile": { "name": "typicode" },
-
+  "profile": {
+    "name": "typicode"
+  },
   "users": [
     {
       "id": 1,
       "name": "Kevin Martínez",
       "books": [
-        { "id": 1, "name": "Test 1", "total_recipes": 5}
+        {
+          "id": 1,
+          "name": "Test 1",
+          "total_recipes": 5
+        }
       ]
-
+    }
+  ],
+  "recipes": [
+    {
+      "label": "Amalfi Salads",
+      "image": "https://www.edamam.com/web-img/ebd/ebddea03717af6461a1da0dee15fb4d6.jpg",
+      "ingredients": [
+        [
+          {
+            "text": "5.0 tbsp olive oil",
+            "weight": 67.5
+          },
+          {
+            "text": "1.0 tbsp balsamic vinegar",
+            "weight": 16
+          },
+          {
+            "text": "1 tbsp sundried tomato paste",
+            "weight": 16
+          },
+          {
+            "text": "50.0g pine nuts",
+            "weight": 50
+          },
+          {
+            "text": "200.0g sunblush tomatoes , roughly chopped",
+            "weight": 200
+          },
+          {
+            "text": "200.0g black olives (niçoise are great)",
+            "weight": 200
+          },
+          {
+            "text": "2 x 110g packs salad leaves (we used bistro salad with red chard)",
+            "weight": 220
+          }
+        ]
+      ],
+      "id": 1
+    },
+    {
+      "label": "Bread",
+      "image": "https://www.edamam.com/web-img/500/5007fb0b77c9eb6e51f6ed6242c92d97.jpg",
+      "ingredients": [
+        [
+          {
+            "text": "8 cup white bread flour",
+            "weight": 1096
+          },
+          {
+            "text": "2 packages rapid-rise active Dry Yeast",
+            "weight": 72
+          },
+          {
+            "text": "4 tsp Salt",
+            "weight": 24
+          },
+          {
+            "text": "3 cup water",
+            "weight": 711
+          }
+        ]
+      ],
+      "id": 2
+    },
+    {
+      "label": "Cheddar And Blue Hamburger",
+      "image": "https://www.edamam.com/web-img/e88/e8808d5d35b2e62a2a10414bac64613a.jpg",
+      "ingredients": [
+        [
+          {
+            "text": "4 tablespoons butter",
+            "weight": 56.8
+          },
+          {
+            "text": "2 fresh baked hamburger buns, soft",
+            "weight": 84
+          },
+          {
+            "text": "4 slices, Polish Ham",
+            "weight": 112
+          },
+          {
+            "text": "18 ounces freshly ground beef, 15/85 combo, measured out in 3 oz. balls",
+            "weight": 510.29141625
+          },
+          {
+            "text": "1 small onion, finely chopped",
+            "weight": 70
+          },
+          {
+            "text": "1 glove garlic, finely chopped",
+            "weight": 24
+          },
+          {
+            "text": "2 teaspoons season salt",
+            "weight": 12
+          },
+          {
+            "text": "2 teaspoons worcestershire sauce",
+            "weight": 11.458333333914512
+          },
+          {
+            "text": "pepper, freshly ground",
+            "weight": 3.520940665001744
+          },
+          {
+            "text": "4 ounces sharp cheddar, I like white cheddar fr/Vermont",
+            "weight": 113.3980925
+          },
+          {
+            "text": "2 ounces blue cheese, Maytag is my fav.",
+            "weight": 56.69904625
+          },
+          {
+            "text": "1 perfectly ripe tomato, sliced",
+            "weight": 123
+          },
+          {
+            "text": "yellow mustard",
+            "weight": 17.604703325008717
+          }
+        ]
+      ],
+      "id": 3
+    },
+    {
+      "label": "Classic Hamburger",
+      "image": "https://www.edamam.com/web-img/b96/b96529b3cb83a4dfd78f33a16b99215e.jpg",
+      "ingredients": [
+        [
+          {
+            "text": "1 medium onion, chopped",
+            "weight": 110
+          },
+          {
+            "text": "1 tablespoon canola oil",
+            "weight": 14
+          },
+          {
+            "text": "2 tablespoons ketchup, divided",
+            "weight": 34
+          },
+          {
+            "text": "2 tablespoons low-fat mayonnaise",
+            "weight": 29.2
+          },
+          {
+            "text": "2 teaspoons dill pickle relish",
+            "weight": 10
+          },
+          {
+            "text": "1 teaspoon distilled white vinegar",
+            "weight": 5
+          },
+          {
+            "text": "1 pound lean (90% or leaner) ground beef",
+            "weight": 453.59237
+          },
+          {
+            "text": "2 tablespoons worcestershire sauce or steak sauce",
+            "weight": 34
+          },
+          {
+            "text": "1/2 teaspoon freshly ground pepper",
+            "weight": 1.45
+          },
+          {
+            "text": "4 sesame-seed or other hamburger buns, toasted",
+            "weight": 168
+          },
+          {
+            "text": "4 slices tomato",
+            "weight": 108
+          },
+          {
+            "text": "4 leaves green-leaf lettuce",
+            "weight": 20
+          }
+        ]
+      ],
+      "id": 4
+    },
+    {
+      "label": "Master Recipe For Cool Noodle Salads",
+      "image": "https://www.edamam.com/web-img/b3a/b3a844fb4542fd2c8c4fdb154af27712.jpg",
+      "ingredients": [
+        [
+          {
+            "text": "1/3 to 1/2 cup roughly chopped or small whole mint leaves",
+            "weight": 28.5
+          },
+          {
+            "text": "8 oz. dried rice vermicelli",
+            "weight": 226.796185
+          },
+          {
+            "text": "1/3 to 1/2 cup roughly chopped or small basil or Thai basil leaves",
+            "weight": 10
+          },
+          {
+            "text": "1-1/2 cups peeled, seeded, and julienned cucumber",
+            "weight": 156
+          },
+          {
+            "text": "12 sprigs fresh cilantro",
+            "weight": 26.666666666666668
+          },
+          {
+            "text": "2 cups washed and shredded romaine, red, or green leaf lettuce",
+            "weight": 110
+          },
+          {
+            "text": "2 Tbs. chopped roasted peanuts",
+            "weight": 18.249999999691447
+          },
+          {
+            "text": "2 cups fresh, crisp bean sprouts",
+            "weight": 208
+          },
+          {
+            "text": "1 recipe for Warm Lemon Grass Shrimp, Vietnamese Grilled Pork, or Stir-Fried Vegetables.",
+            "weight": 287.8787878787879
+          }
+        ]
+      ],
+      "id": 5
+    },
+    {
+      "label": "Turkey with Two Salads",
+      "image": "https://www.edamam.com/web-img/23f/23fe5075963e139b605666c784825a77.jpg",
+      "ingredients": [
+        [
+          {
+            "text": "6 teaspoons olive oil",
+            "weight": 27
+          },
+          {
+            "text": "1 package (10 ounces) white mushrooms trimmed and thinly sliced coarse salt and ground pepper",
+            "weight": 283.49523125
+          },
+          {
+            "text": "1 package (10 ounces) white mushrooms trimmed and thinly sliced coarse salt and ground pepper",
+            "weight": 283.49523125
+          },
+          {
+            "text": "1 package (10 ounces) white mushrooms trimmed and thinly sliced coarse salt and ground pepper",
+            "weight": 283.49523125
+          },
+          {
+            "text": "1 medium yellow onion finely chopped",
+            "weight": 110
+          },
+          {
+            "text": "1 cup israeli couscous",
+            "weight": 173
+          },
+          {
+            "text": "2/3 cup dried cranberries or cherries",
+            "weight": 80.8080808080808
+          },
+          {
+            "text": "1/4 cup fresh lime juice (from about 2 limes)",
+            "weight": 60.5
+          },
+          {
+            "text": "1 tablespoon dijon mustard",
+            "weight": 15
+          },
+          {
+            "text": "3 packed cups loose spinach (about 5 ounces) trimmed, well washed and dried 1 pound cooked turkey (1/2 reserved spice-rubbed turkey breast), thinly sliced, room temperature",
+            "weight": 420
+          }
+        ]
+      ],
+      "id": 6
     }
   ]
 }
