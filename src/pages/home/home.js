@@ -20,7 +20,7 @@ export default class Home extends React.Component {
         <div className="container-fluid">
           <div className="row">
             <SelectCategories />
-            <RecipeList recipes={this.props.recipes}/>
+            <RecipeList recipes={this.props.recipes} categoryParam={this.props.match.params.filter}/>
           </div>
         </div>
       </React.Fragment>

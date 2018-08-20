@@ -13,6 +13,6 @@ export default {
     { id: 6, category: 'chicken', url: `${API}chicken${credentials}` },
     { id: 7, category: 'bread', url: `${API}bread${credentials}` },
     { id: 8, category: 'salads', url: `${API}salads${credentials}` },
-    { id: 9, category: 'dessert', url: `${API}salads${credentials}` }
+    { id: 9, category: 'desserts', url: `${API}desserts${credentials}` }
   ]
 }

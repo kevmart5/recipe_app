@@ -26,7 +26,7 @@ class SelectCategorie extends React.Component {
           <div className="categories__options">
             <ul className="list-group .categories__list">
               <li className="list-group-item categories__list-link">
-                <Link to={'/'}>All categories</Link>
+                <Link className="categories__list-anchor-active" to={'/'}>All categories</Link>
               </li>
               {
                 api.categories.map((e, i) => (

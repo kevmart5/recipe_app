@@ -23,10 +23,20 @@ export default class RecipeList extends React.Component {
   render() {
     const { recipes } = this.props;
     const isLoading = this.state.isLoading;
-    console.log('props', this.props)
     return (
-      <div className="col-xs-12 col-sm-12 col-md-10 recipe__main">
+      <div className="col-xs-12 col-sm-12 col-md-10 col-lg-10 recipe__main">
         <div className="container">
+          <div className="row">
+            <div className="col-xs-12 col-sm-12 col-md-10 col-lg-10">
+              <div className="text-center recipe-list__title">
+              {
+                this.props.categoryParam ? (<h3>Our results for {this.props.categoryParam}</h3>) 
+                : (<h3>Welcome</h3>)
+              }
+                
+              </div>
+            </div>
+          </div>
           <div className="row">
             {recipes.map((rec, index) => (
               <Recipe

@@ -15,4 +15,17 @@
     display: inline;
     margin-right: 5%;
   }
+
+  .footer__navigation-link{
+    color: $secondary;
+    text-decoration: none;
+  }
+
+  .footer__api-element-left {
+    margin-right: 2%;
+  }
+
+  .footer__api-element-right {
+    margin-left: 2%;
+  }
 }

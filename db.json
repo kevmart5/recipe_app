@@ -303,6 +303,47 @@
         ]
       ],
       "id": 6
+    },
+    {
+      "label": "Swiss Steak",
+      "image": "https://www.edamam.com/web-img/5ab/5ab773ac8111a2624cbc6461afe88dde.JPG",
+      "ingredients": [
+        [
+          {
+            "text": "1-1 1/2 pound edge of eye or round steak",
+            "weight": 566.9904625
+          },
+          {
+            "text": "2 cans stewed tomato",
+            "weight": 234.35555555555553
+          },
+          {
+            "text": "1 small or med/small onion",
+            "weight": 70
+          },
+          {
+            "text": "1 bell pepper",
+            "weight": 119
+          },
+          {
+            "text": "2 tablespoons flour (to dredge the meat)",
+            "weight": 15.624999999735829
+          },
+          {
+            "text": "Salt and pepper to taste",
+            "weight": 6.035826108331748
+          },
+          {
+            "text": "Salt and pepper to taste",
+            "weight": 3.017913054165874
+          },
+          {
+            "text": "Olive oil to coat fry pan",
+            "weight": 13.681205845551961
+          }
+        ]
+      ],
+      "id": 7
     }
   ]
 }
