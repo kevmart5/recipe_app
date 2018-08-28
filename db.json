@@ -163,6 +163,112 @@
         ]
       ],
       "id": 3
+    },
+    {
+      "label": "Classic Hamburger",
+      "image": "https://www.edamam.com/web-img/e3c/e3cf26d5d877e762f3a85a43fef329db.jpg",
+      "calories": 1686.0188563461,
+      "ingredients": [
+        [
+          {
+            "text": "1 lb. ground beef or chuck",
+            "weight": 453.59237
+          },
+          {
+            "text": "Salt and freshly ground black pepper",
+            "weight": 5.1587542200000005
+          },
+          {
+            "text": "Salt and freshly ground black pepper",
+            "weight": 2.5793771100000003
+          },
+          {
+            "text": "4 soft white hamburger bun, split",
+            "weight": 168
+          },
+          {
+            "text": "4 1/4\"-thick slices of a large ripe tomato",
+            "weight": 135
+          },
+          {
+            "text": "4 small leaves iceberg lattuce",
+            "weight": 20
+          },
+          {
+            "text": "4 1/4\"-thick slices peeled onion",
+            "weight": 83.2
+          }
+        ]
+      ],
+      "id": 4
+    },
+    {
+      "label": "Roast Chicken",
+      "image": "https://www.edamam.com/web-img/0f1/0f1cb835e1967f2d9816657a5bb388a8.jpg",
+      "calories": 3881.8498434228713,
+      "ingredients": [
+        [
+          {
+            "text": "1-1/2 Tbs. olive oil",
+            "weight": 20.25
+          },
+          {
+            "text": "2 tsp. granulated sugar",
+            "weight": 8.4
+          },
+          {
+            "text": "3-1/2 to 4-lb. whole chicken",
+            "weight": 1700.9713875
+          },
+          {
+            "text": "Freshly ground black pepper",
+            "weight": 5.2762391624985225
+          },
+          {
+            "text": "2 Tbs. kosher salt",
+            "weight": 29.124999999507587
+          }
+        ]
+      ],
+      "id": 5
+    },
+    {
+      "label": "Potatoes Fondantes",
+      "image": "https://www.edamam.com/web-img/d89/d8966612dfbbfd363235f4d509f848bf.jpg",
+      "calories": 1123.7262498,
+      "ingredients": [
+        [
+          {
+            "text": "2 lb. baby Yukon Gold or Red Bliss potatoes (20 to 25 potatoes, 1-1/2 to 1-3/4 inches in diameter)",
+            "weight": 907.18474
+          },
+          {
+            "text": "1 sprig fresh rosemary",
+            "weight": 5
+          },
+          {
+            "text": "1 teaspoon kosher salt (less if the broth is salty)",
+            "weight": 4.854166666912875
+          },
+          {
+            "text": "2 cups homemade or low-salt chicken broth",
+            "weight": 480
+          },
+          {
+            "text": "1 to 2 Tbs. thinly sliced fresh chives",
+            "weight": 4.5
+          },
+          {
+            "text": "1 Tbs. unsalted butter",
+            "weight": 14.2
+          },
+          {
+            "text": "2 Tbs. good-quality extra-virgin olive oil",
+            "weight": 27
+          }
+        ]
+      ],
+      "id": 6
     }
   ]
 }

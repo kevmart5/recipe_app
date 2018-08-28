@@ -28,7 +28,7 @@ class RecepiDetail extends React.Component {
         ingredients: [
           this.state.recipeDetail.ingredients
         ]
-      })
+      }) 
       .then(response => {
         console.log(response.data);
         this.setState({

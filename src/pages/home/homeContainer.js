@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from 'react-redux'
-import getAllRecipes from '../../redux/actionsCreators/recipes';
+import getAllUsers from '../../redux/actionsCreators/recipes';
 import Home from './home';
 import api from '../../api'
 

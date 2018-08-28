@@ -24,6 +24,7 @@ export default class RecipeList extends React.Component {
   render() {
     const { recipes } = this.props;
     const isLoading = this.state.isLoading;
+    console.log(recipes);
 
     if (isLoading) {
       
@@ -37,7 +38,7 @@ export default class RecipeList extends React.Component {
                   {this.props.categoryParam ? (
                     <h3>Our results for {this.props.categoryParam}</h3>
                   ) : (
-                    <h3>Welcome to find it!</h3>
+                    <h3>Welcome to Find it!</h3>
                   )}
                 </div>
               </div>
